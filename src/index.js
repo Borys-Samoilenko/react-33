@@ -1,14 +1,11 @@
-import ReactDom from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
 
-const painting = (
-  <div>
-    <img src="" alt="" width="480" />
-    <h2></h2>
-    <p>
-      Автор: <a href=""></a>
-    </p>
-    <p>Цена: кредитов</p>
-    <p>Доступность: заканчивается или есть в наличии</p>
-    <button type="button">Добавить в корзину</button>
-  </div>
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
 );
